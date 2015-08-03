@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link href="Login.css" rel="stylesheet">
+    <link href="NavBar.css" rel="stylesheet">
+    <meta charset="utf-8">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<nav>
+    <div id="nav">
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Suplements.html">Products</a>
+                <ul>
+                    <li><a href="Suplements.html">Fitness Suplements</a></li>
+                    <li><a href="Clothing.html">Fitness Clothing</a></li>
+                </ul>
+            </li>
+            <li><a href="Articles.html">Fitness Articles</a></li>
+            <li><a href="Contracts.html">Contacts</a></li>
+            <li id="l"><a href="Login.html">Sign in</a></li>
+            <li id="r"><a href="Register.html">Register</a></li>
+        </ul>
+    </div>
+</nav>
+<hr>
+<div id="login">
+
+    <h2><span class="fontawesome-lock"></span>Send us an E-mail</h2>
+
+    <form action="javascript:void(0);" method="POST">
+
+        <fieldset>
+
+            <p><label for="email">Your E-mail</label></p>
+            <p><input type="email" id="email" value="" onBlur="if(this.value=='')this.value=''" onFocus="if(this.value=='')this.value=''"></p>
+
+            <p><label for="">Your Message</label></p>
+            <textarea rows="10" cols="20" id="contactFORM"> </textarea>
+
+
+            <p><input type="submit" value="Send"></p>
+
+        </fieldset>
+
+    </form>
+
+</div> <!-- end login -->
+    @{
+    var db = Database.open("TeamMedisalton");
+    var sql = "SELECT * FROM Products";
+    var data = db.Query(sql);
+    }
+    @foreach(var row in data) {
+            @row.Name
+    }
+</body>
+</html>

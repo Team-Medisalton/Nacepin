@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <link href="Login.css" rel="stylesheet">
+    <link href="NavBar.css" rel="stylesheet">
+    <meta charset="utf-8">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<nav>
+    <div id="nav">
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Suplements.html">Products</a>
+                <ul>
+                    <li><a href="Suplements.html">Fitness Suplements</a></li>
+                    <li><a href="Clothing.html">Fitness Clothing</a></li>
+                </ul>
+            </li>
+            <li><a href="Articles.html">Fitness Articles</a></li>
+            <li><a href="Contracts.html">Contacts</a></li>
+            <li id="l"><a href="Login.html">Sign in</a></li>
+            <li id="r"><a href="Register.html">Register</a></li>
+        </ul>
+    </div>
+</nav>
+<hr>
+<div id="login">
+
+    <h2><span class="fontawesome-lock"></span>Register</h2>
+
+    <form action="javascript:void(0);" method="POST">
+
+        <fieldset>
+
+            <p><label for="email">E-mail address</label></p>
+            <p><input type="email" id="email" value="" onBlur="if(this.value=='')this.value=''" onFocus="if(this.value=='')this.value=''"></p> <!-- JS because of IE support; better: placeholder="mail@address.com" -->
+
+            <p><label for="password">Password</label></p>
+            <p><input type="password" id="password1" value="" onBlur="if(this.value=='')this.value=''" onFocus="if(this.value=='')this.value=''"></p> <!-- JS because of IE support; better: placeholder="password" -->
+
+            <p><label for="password">Confirm Password</label></p>
+            <p><input type="password" id="password" value="" onBlur="if(this.value=='')this.value=''" onFocus="if(this.value=='')this.value=''"></p> <!-- JS because of IE support; better: placeholder="password" -->
+
+            <p><input type="submit" value="Register"></p>
+
+        </fieldset>
+
+    </form>
+
+</div> <!-- end login -->
+
+</body>
+</html>

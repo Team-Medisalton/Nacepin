@@ -6,9 +6,6 @@
     <meta charset="utf-8">
 
     <title>Login</title>
-
-
-
 </head>
 
 <body>
@@ -39,13 +36,22 @@
         <fieldset>
 
             <p><label for="email">E-mail address</label></p>
-            <p><input type="email" id="email" value="" onBlur="if(this.value=='')this.value=''" onFocus="if(this.value=='')this.value=''"></p> <!-- JS because of IE support; better: placeholder="mail@address.com" -->
+
+            <p><input type="email" id="email" value="" onBlur="if(this.value=='')this.value=''"
+                      onFocus="if(this.value=='')this.value=''"></p>
+            <!-- JS because of IE support; better: placeholder="mail@address.com" -->
 
             <p><label for="password">Password</label></p>
-            <p><input type="password" id="password1" value="" onBlur="if(this.value=='')this.value=''" onFocus="if(this.value=='')this.value=''"></p> <!-- JS because of IE support; better: placeholder="password" -->
+
+            <p><input type="password" id="password1" value="" onBlur="if(this.value=='')this.value=''"
+                      onFocus="if(this.value=='')this.value=''"></p>
+            <!-- JS because of IE support; better: placeholder="password" -->
 
             <p><label for="password">Confirm Password</label></p>
-            <p><input type="password" id="password" value="" onBlur="if(this.value=='')this.value=''" onFocus="if(this.value=='')this.value=''"></p> <!-- JS because of IE support; better: placeholder="password" -->
+
+            <p><input type="password" id="password" value="" onBlur="if(this.value=='')this.value=''"
+                      onFocus="if(this.value=='')this.value=''"></p>
+            <!-- JS because of IE support; better: placeholder="password" -->
 
             <p><input type="submit" value="Register"></p>
 
@@ -53,7 +59,7 @@
 
     </form>
 
-</div> <!-- end login -->
+</div>
 
 </body>
 </html>

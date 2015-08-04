@@ -1,0 +1,36 @@
+p{
+    text-align: center;
+    font-size: 25px;
+
+}
+
+h1{
+    text-align: center;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    align-items: inherit;
+
+}
+.table{
+    font-size: 25px;
+    background-color: #a1b2c3;
+    color: #000000;
+}
+
+.table img:hover{
+
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-box-shadow:3px 5px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 3px 5px 7px rgba(0,0,0,.7);
+    box-shadow:3px 5px 7px rgba(0,0,0,.7);
+    cursor:pointer;
+    background:#d8e9f9;
+}

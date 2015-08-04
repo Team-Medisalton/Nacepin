@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").mouseover(function(){
+                var headimg = $("#headIMG");
+                headimg.animate({height: '150px', opacity: '0.8'}, "slow");
+                headimg.css('visibility' , 'visible')
+            })
+        })
+    </script>
     <link href="../StyleSheets/NavBar.css" rel="stylesheet">
     <link href="../StyleSheets/ClothingPageText.css" rel="stylesheet">
     <meta charset="UTF-8">

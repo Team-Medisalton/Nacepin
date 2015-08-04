@@ -5,6 +5,17 @@
     <link href="../StyleSheets/SuplementsPageText.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").mouseover(function(){
+                var div = $("#headIMG");
+                div.animate({height: '450px', opacity: '0.8'}, "slow");
+                div.animate({width: '650px', opacity: '0.7'}, "slow");
+                div.css('visibility' , 'visible')
+            });
+        });
+    </script>
 </head>
 <body>
 <nav>
@@ -27,7 +38,7 @@
     </div>
 </nav>
 <hr>
-<p><img id="headIMG" src="../images/Effect/Head.jpg"></p>
+<p><img height="300" width="300" id="headIMG" src="../images/Effect/Head.jpg"></p>
 <table class="table" border="1">
     <tr>
         <td><img id="firstIMG" onclick="myFunc()" align="left" height="250" width="250"

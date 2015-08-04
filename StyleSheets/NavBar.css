@@ -62,3 +62,9 @@ body{
     background-repeat: repeat;
     background-size: 1300px 930px;
 }
+#movable{
+    visibility: hidden;
+}
+#clickable{
+cursor: hand;
+}

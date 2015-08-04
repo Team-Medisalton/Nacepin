@@ -19,8 +19,10 @@ img{
 }
 .table{
     font-size: 25px;
-    background-color: #a1b2c3;
-    color: #000000;
+    background: #efefef;
+    background: linear-gradient(top, #efefef 0%, #efefef 100%);
+    background: -moz-linear-gradient(top, #ffffff 0%, #64767c 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #64767c 100%);
 }
 
 .table img:hover{

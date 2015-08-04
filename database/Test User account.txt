@@ -1,0 +1,4 @@
+Initialy database offers only one user account:
+
+Email : test@gmail.com 
+Pass : test

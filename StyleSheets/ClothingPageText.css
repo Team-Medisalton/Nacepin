@@ -1,0 +1,15 @@
+#parIMG{
+    text-align: center;
+    font-size: 25px;
+
+}
+#imgDIV img:hover{
+
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-box-shadow:3px 5px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 3px 5px 7px rgba(0,0,0,.7);
+    box-shadow:3px 5px 7px rgba(0,0,0,.7);
+    cursor:pointer;
+}

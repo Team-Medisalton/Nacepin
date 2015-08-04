@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link href="../StyleSheets/NavBar.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").mouseover(function(){
+                var div = $("#movable");
+                div.animate({height: '550px', opacity: '0.8'}, "slow");
+                div.animate({width: '550px', opacity: '0.7'}, "slow");
+                div.css('visibility' , 'visible')
+            });
+        });
+    </script>
+</head>
+<body>
+<nav>
+    <div id="nav">
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Suplements.html">Products</a>
+                <ul>
+                    <li><a href="Suplements.html">Fitness Suplements</a></li>
+                    <li><a href="Clothing.html">Fitness Clothing</a></li>
+                </ul>
+            </li>
+            <li><a href="BecomeMember.html">Become a member</a></li>
+            <li><a href="Contracts.html">Contacts</a></li>
+            <li id="l"><a href="Logout.php">Sign Out</a></li>
+            <li id="r"><a href="Register.html">Register</a></li>
+            <li><a href="ShoppingCart.html">Shopping Cart</a></li>
+
+        </ul>
+    </div>
+</nav>
+
+    <hr>
+<img id="clickable" src="../images/checkOUT.png" width="800" height="200">
+<div id="movable" style="height:100px;width:100px;position:absolute;"><iframe width="550" height="550" src="https://www.youtube.com/embed/G5H9V--jJNg" frameborder="0"
+                                                                                                  allowfullscreen></iframe></div>
+
+    <hr>
+
+</body>
+</html>

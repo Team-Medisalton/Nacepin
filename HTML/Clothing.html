@@ -2,23 +2,17 @@
 <html>
 <head lang="en">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("body").mouseover(function(){
-                var headimg = $("#headIMG");
-                var bodyIMG = $(".myClass");
-                headimg.animate({height: '95px', opacity: '0.8'}, "slow");
-                headimg.animate({width: '610', opacity: '0.7'}, "slow");
-
-            })
-        })
-    </script>
     <link href="../StyleSheets/NavBar.css" rel="stylesheet">
     <link href="../StyleSheets/ClothingPageText.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title></title>
 </head>
 <body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/minicart/3.0.6/minicart.min.js"></script>
+<script>
+    paypal.minicart.render();
+</script>
+
 <nav>
     <div id="nav">
         <ul>
@@ -39,17 +33,106 @@
     </div>
 </nav>
 <hr>
-
-<p id="parIMG"><img width="510" height="95" id="headIMG" src="../images/Shopping/nadpis.png"></p>
 <div id="imgDIV">
-<p><img height="250" width="250" src="../images/Clothing/1.jpg"><img src="../images/Shopping/1.png"></p>
-<p><img height="250" width="250" src="../images/Clothing/2.jpg"><img src="../images/Shopping/1.png"></p>
-<p><img height="250" width="250" src="../images/Clothing/3.jpg"><img src="../images/Shopping/1.png"></p>
-<p><img height="250" width="250" src="../images/Clothing/4.png"><img src="../images/Shopping/1.png"></p>
-<p><img height="250" width="250" src="../images/Clothing/5.jpg"><img src="../images/Shopping/1.png"></p>
-<p><img height="250" width="250" src="../images/Clothing/6.jpg"><img src="../images/Shopping/1.png"></p>
-<p><img height="250" width="250" src="../images/Clothing/7.jpg"><img src="../images/Shopping/1.png"></p>
-<p><img height="250" width="250" src="../images/Clothing/8.jpg"><img src="../images/Shopping/1.png"></p>
+<img height="250" width="250" src="../images/Clothing/1.jpg">4.95 USD
+
+    <form method="post" action="https://www.paypal.com/cgi-bin/webscr" target="paypal">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="">
+        <input type="hidden" name="item_name" value="I Hate Running T-Shirt">
+        <input type="hidden" name="item_number" value="1">
+        <input type="hidden" name="amount" value="4.95">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="return" value="">
+        <input type="hidden" name="undefined_quantity" value="1">
+        <input type="image" src="http://www.paypalobjects.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" width="87" height="23" alt="Make payments with PayPal - it's fast, free and secure!">
+    </form>
+
+    <img height="250" width="250" src="../images/Clothing/2.jpg">3.45 USD    <form method="post" action="https://www.paypal.com/cgi-bin/webscr" target="paypal">
+    <input type="hidden" name="add" value="1">
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="business" value="">
+    <input type="hidden" name="item_name" value="Hulk Gloves">
+    <input type="hidden" name="item_number" value="2">
+    <input type="hidden" name="amount" value="3.45">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="return" value="">
+    <input type="hidden" name="undefined_quantity" value="1">
+    <input type="image" src="http://www.paypalobjects.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" width="87" height="23" alt="Make payments with PayPal - it's fast, free and secure!">
+</form>
+<img height="250" width="250" src="../images/Clothing/3.jpg">7.25 USD    <form method="post" action="https://www.paypal.com/cgi-bin/webscr" target="paypal">
+    <input type="hidden" name="add" value="1">
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="business" value="">
+    <input type="hidden" name="item_name" value="Swim Shoes">
+    <input type="hidden" name="item_number" value="3">
+    <input type="hidden" name="amount" value="7.25">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="return" value="">
+    <input type="hidden" name="undefined_quantity" value="1">
+    <input type="image" src="http://www.paypalobjects.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" width="87" height="23" alt="Make payments with PayPal - it's fast, free and secure!">
+</form>
+<img height="250" width="250" src="../images/Clothing/4.png">4.85 USD    <form method="post" action="https://www.paypal.com/cgi-bin/webscr" target="paypal">
+    <input type="hidden" name="add" value="1">
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="business" value="">
+    <input type="hidden" name="item_name" value="Single Taken T-shirt">
+    <input type="hidden" name="item_number" value="4">
+    <input type="hidden" name="amount" value="4.85">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="return" value="">
+    <input type="hidden" name="undefined_quantity" value="1">
+    <input type="image" src="http://www.paypalobjects.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" width="87" height="23" alt="Make payments with PayPal - it's fast, free and secure!">
+</form>
+<img height="250" width="250" src="../images/Clothing/5.jpg">8.85 USD    <form method="post" action="https://www.paypal.com/cgi-bin/webscr" target="paypal">
+    <input type="hidden" name="add" value="1">
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="business" value="">
+    <input type="hidden" name="item_name" value="Human Shoes">
+    <input type="hidden" name="item_number" value="5">
+    <input type="hidden" name="amount" value="8.85">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="return" value="">
+    <input type="hidden" name="undefined_quantity" value="1">
+    <input type="image" src="http://www.paypalobjects.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" width="87" height="23" alt="Make payments with PayPal - it's fast, free and secure!">
+</form>
+<img height="250" width="250" src="../images/Clothing/6.jpg">5.95 USD    <form method="post" action="https://www.paypal.com/cgi-bin/webscr" target="paypal">
+    <input type="hidden" name="add" value="1">
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="business" value="">
+    <input type="hidden" name="item_name" value="I love Running Slow Hat">
+    <input type="hidden" name="item_number" value="6">
+    <input type="hidden" name="amount" value="5.95">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="return" value="">
+    <input type="hidden" name="undefined_quantity" value="1">
+    <input type="image" src="http://www.paypalobjects.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" width="87" height="23" alt="Make payments with PayPal - it's fast, free and secure!">
+</form>
+<img height="250" width="250" src="../images/Clothing/7.jpg">6.95 USD    <form method="post" action="https://www.paypal.com/cgi-bin/webscr" target="paypal">
+    <input type="hidden" name="add" value="1">
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="business" value="">
+    <input type="hidden" name="item_name" value="Faster Than IE Hat">
+    <input type="hidden" name="item_number" value="7">
+    <input type="hidden" name="amount" value="6.95">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="return" value="">
+    <input type="hidden" name="undefined_quantity" value="1">
+    <input type="image" src="http://www.paypalobjects.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" width="87" height="23" alt="Make payments with PayPal - it's fast, free and secure!">
+</form>
+<img height="250" width="250" src="../images/Clothing/8.jpg">3.30 USD    <form method="post" action="https://www.paypal.com/cgi-bin/webscr" target="paypal">
+    <input type="hidden" name="add" value="1">
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="business" value="">
+    <input type="hidden" name="item_name" value="Giraffe shoes">
+    <input type="hidden" name="item_number" value="8">
+    <input type="hidden" name="amount" value="3.30">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="return" value="">
+    <input type="hidden" name="undefined_quantity" value="1">
+    <input type="image" src="http://www.paypalobjects.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" width="87" height="23" alt="Make payments with PayPal - it's fast, free and secure!">
+</form>
 </div>
 </body>
 </html>

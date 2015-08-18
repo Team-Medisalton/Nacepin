@@ -15,6 +15,7 @@ h1{
 }
 img{
     align-items: inherit;
+    z-index: 1;
 
 }
 .table{

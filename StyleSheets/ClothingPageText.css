@@ -16,3 +16,10 @@
 p{
     font-size: 25px;
 }
+table{
+font-size: 25px;
+background: #efefef;
+background: linear-gradient(top, #efefef 0%, #efefef 100%);
+background: -moz-linear-gradient(top, #ffffff 0%, #64767c 100%);
+background: -webkit-linear-gradient(top, #ffffff 0%, #64767c 100%);
+}

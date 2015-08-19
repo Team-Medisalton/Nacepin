@@ -1,6 +1,6 @@
 WinXP Virtual machine 
 
 1.Install XP Mode on the computer : http://windows.microsoft.com/bg-bg/windows7/install-and-use-windows-xp-mode-in-windows-7
-2.Download and unpack archive, link : https://drive.google.com/file/d/0B4g_o6f4Hu9XcTlaOUo5Y2FYUHc/view?usp=sharing
+2.Download and unpack archive, link : https://drive.google.com/file/d/0B4g_o6f4Hu9XVGVKTXItNkNLWU0/view?usp=sharing
 3.Copy the complete package folder content under your user, C:\Users\YOURUSER\AppData\Local\Microsoft\Windows Virtual PC 
 4.Start VM (user: XPMUser; password : pass;)

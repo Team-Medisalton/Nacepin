@@ -33,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BecomeMember.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BecomeMember.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HTML/BecomeMember.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.076923">
-              <caret line="46" column="49" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.43130228">
+              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -47,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/StyleSheets/BecomeMember.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -63,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Welcome.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Welcome.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/Welcome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40621266">
+            <state vertical-scroll-proportion="-13.076923">
               <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
               <folding />
             </state>
@@ -115,9 +115,7 @@
         <option value="$PROJECT_DIR$/Contracts.html" />
         <option value="$PROJECT_DIR$/HTML/Articles.html" />
         <option value="$PROJECT_DIR$/StyleSheets/Login.css" />
-        <option value="$PROJECT_DIR$/StyleSheets/BecomeMember.css" />
         <option value="$PROJECT_DIR$/Scripts/Animate.js" />
-        <option value="$PROJECT_DIR$/HTML/BecomeMember.html" />
         <option value="$PROJECT_DIR$/HTML/Contracts.html" />
         <option value="$PROJECT_DIR$/HTML/Register.html" />
         <option value="$PROJECT_DIR$/HTML/HomePage.html" />
@@ -129,6 +127,8 @@
         <option value="$PROJECT_DIR$/HTML/Clothing.html" />
         <option value="$PROJECT_DIR$/HTML/Login.html" />
         <option value="$PROJECT_DIR$/HTML/Welcome.html" />
+        <option value="$PROJECT_DIR$/StyleSheets/BecomeMember.css" />
+        <option value="$PROJECT_DIR$/HTML/BecomeMember.html" />
       </list>
     </option>
   </component>
@@ -268,8 +268,11 @@
       <recent name="C:\Users\bkatsarski\Documents\GitHub\Nacepin\StyleSheets" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.HomePage.html">
+  <component name="RunManager" selected="JavaScript Debug.Welcome.html">
     <configuration default="false" name="HomePage.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TeamMedisalton/HTML/HomePage.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="Welcome.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TeamMedisalton/HTML/Welcome.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -310,12 +313,14 @@
       <envs />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.HomePage.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Welcome.html" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.HomePage.html" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Welcome.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.HomePage.html" />
       </list>
     </recent_temporary>
   </component>
@@ -333,7 +338,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1284" height="1000" extended-state="1" />
+    <frame x="-8" y="0" width="1284" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -703,14 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StyleSheets/BecomeMember.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/HomePage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.2692308">
@@ -718,14 +715,6 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/BecomeMember.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.076923">
-          <caret line="46" column="49" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -747,8 +736,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/Welcome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40621266">
+        <state vertical-scroll-proportion="-13.076923">
           <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StyleSheets/BecomeMember.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/BecomeMember.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43130228">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
           <folding />
         </state>
       </provider>

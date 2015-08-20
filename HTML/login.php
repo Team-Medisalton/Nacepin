@@ -94,7 +94,7 @@ else
                 /*** tell the user we are logged in ***/
                 /*** $message = 'You are now logged in'; ***/
 				
-				header("location:HomePage_In.html");
+				header("location:Welcome.html");
 				exit;
 				
 		}

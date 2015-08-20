@@ -309,7 +309,7 @@
       <recent name="C:\Users\bkatsarski\Documents\GitHub\Nacepin\StyleSheets" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Welcome.html">
+  <component name="RunManager" selected="JavaScript Debug.HomePage.html">
     <configuration default="false" name="HomePage.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TeamMedisalton/HTML/HomePage.html">
       <method />
     </configuration>
@@ -360,8 +360,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Welcome.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.HomePage.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.HomePage.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Welcome.html" />
       </list>
     </recent_temporary>
   </component>
@@ -379,7 +379,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1284" height="1000" extended-state="0" />
+    <frame x="-8" y="0" width="1284" height="1000" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />

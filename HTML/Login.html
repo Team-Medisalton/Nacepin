@@ -32,19 +32,19 @@
 
     <h2><span class="fontawesome-lock"></span>Sign In</h2>
 
-    <form action="javascript:void(0);" method="POST">
+    <form action="Login.php" method="POST">
 
         <fieldset>
 
             <p><label for="email">E-mail address</label></p>
 
-            <p><input type="email" id="email" value="" onBlur="if(this.value=='')this.value=''"
+            <p><input type="email" id="email" name = "email" value="" onBlur="if(this.value=='')this.value=''"
                       onFocus="if(this.value=='')this.value=''"></p>
             <!-- JS because of IE support; better: placeholder="mail@address.com" -->
 
             <p><label for="password">Password</label></p>
 
-            <p><input type="password" id="password" value="" onBlur="if(this.value=='')this.value=''"
+            <p><input type="password" id="password" name ="password" value="" onBlur="if(this.value=='')this.value=''"
                       onFocus="if(this.value=='')this.value=''"></p>
             <!-- JS because of IE support; better: placeholder="password" -->
 

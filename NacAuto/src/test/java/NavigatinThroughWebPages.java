@@ -13,12 +13,15 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by bkatsarski on 21.8.2015 ã..
+ * Created by bkatsarski/GeorgyPorgie on 21.8.2015 ã..
  */
 public class NavigatinThroughWebPages {
     private WebDriver driver;
-    private String URLpath = "http://localhost:63342/TeamMedisalton/HTML/";
-    //private String URLpath = "http://192.168.0.196/team/work/html/";
+    private String URLpath = "http://localhost:63342/TeamMedisalton/HTML/";     //"http://192.168.0.196/team/work/html/";
+
+    String ValidEmail = "test@gmail.com";
+    String ValidPass = "test";
+    String NewEmail = "mail" + Long.toHexString(Double.doubleToLongBits(Math.random())) + "@gmail.com";
 
     @Before
     public void setUp(){
@@ -75,10 +78,16 @@ public class NavigatinThroughWebPages {
     }
 
     @Test
-    public void LogInValidCredentialsTestCases() {
+    public void Login_Register_TestsSuite()
+    {
+        this.LogIn_Positive_TestCases();
+        this.LogIn_Negative_TestCases();
+        this.Register_Positive_TestCases();
+        this.Register_Negative_TestCases();
+    }
 
-        String ValidEmail = "test@gmail.com";
-        String ValidPass = "test";
+    @Test
+    public void LogIn_Positive_TestCases() {
 
         // navigate to homepage
         driver.get(URLpath + "HomePage.html");
@@ -98,18 +107,113 @@ public class NavigatinThroughWebPages {
 
         //Welcome page chk
         assertEquals(URLpath + "Welcome.html", driver.getCurrentUrl());
+
         //Hello message chk
         assertEquals(driver.findElement(By.cssSelector("h1")).getText(), "Hello user you logged in successfully");
     }
 
     @Test
-    public void RegisterNewEmailTestCases() {
-
-        String UserEmail = "mail" + Long.toHexString(Double.doubleToLongBits(Math.random())) + "@gmail.com";
-        String UserPass = "test";
+    public void Register_Positive_TestCases() {
 
         // navigate to homepage
         driver.get(URLpath + "HomePage.html");
+
+        //Click Sign In link
+        driver.findElement(By.linkText("Register")).click();
+
+        //register dialog are active ?
+        assertEquals(URLpath + "Register.html", driver.getCurrentUrl());
+
+        //fill email
+        driver.findElement(By.name("email")).sendKeys(NewEmail);
+        //fill pass
+        driver.findElement(By.name("password")).sendKeys(ValidPass);
+        //fill pass1
+        driver.findElement(By.name("password1")).sendKeys(ValidPass);
+
+        //click Sign In
+        driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
+
+        CatchAlert("Registration Succeed!");
+
+        //Home page chk
+        assertEquals(URLpath + "HomePage.html", driver.getCurrentUrl());
+    }
+
+    @Test
+    public void LogIn_Negative_TestCases(){
+
+        // navigate to homepage
+        driver.get(URLpath + "HomePage.html");
+
+        //Click Sign In link
+        driver.findElement(By.linkText("Sign in")).click();
+
+        //login dialog are active ?
+        assertEquals(URLpath + "Login.html", driver.getCurrentUrl());
+
+        // ------------- Unexisting Email Test --------------------
+
+        //fill unexisting email
+        driver.findElement(By.name("email")).sendKeys(NewEmail);
+        //fill pass
+        driver.findElement(By.name("password")).sendKeys(ValidPass);
+        //click Sign In
+        driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
+
+        CatchAlert("Login Failed!\n\nIncorrect e-mail or password");
+
+        //Home page chk
+        assertEquals(URLpath + "Login.html", driver.getCurrentUrl());
+
+        // ------------- Wrong password Test --------------------
+
+        //fill email
+        driver.findElement(By.name("email")).sendKeys(ValidEmail);
+        //fill wrong pass
+        driver.findElement(By.name("password")).sendKeys(ValidPass + ValidPass);
+        //click Sign In
+        driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
+
+        CatchAlert("Login Failed!\n\nIncorrect e-mail or password");
+
+        //Home page chk
+        assertEquals(URLpath + "Login.html", driver.getCurrentUrl());
+    }
+
+
+    @Test
+    public void Register_Negative_TestCases() {
+
+        // navigate to homepage
+        driver.get(URLpath + "HomePage.html");
+
+        //Click Sign In link
+        driver.findElement(By.linkText("Register")).click();
+
+        //register dialog are active ?
+        assertEquals(URLpath + "Register.html", driver.getCurrentUrl());
+
+        // ------------- Invalid Email Test --------------------
+
+        //fill email w/o '@'
+        driver.findElement(By.name("email")).sendKeys(NewEmail.substring(0, NewEmail.indexOf('@')));
+
+        //JS trick to chk element validity
+        assertEquals(false, ((JavascriptExecutor) driver).executeScript("return document.getElementById(\"email\").validity.valid"));
+
+        //fill pass
+        driver.findElement(By.name("password")).sendKeys(ValidPass);
+        //fill pass1
+        driver.findElement(By.name("password1")).sendKeys(ValidPass);
+
+        //click Sign In
+        driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
+
+        //register page chk
+        assertEquals(URLpath + "Register.html", driver.getCurrentUrl());
+
+        // ------------- Passwords not match Test --------------------
 
         //Click Sign In link
         driver.findElement(By.linkText("Register")).click();
@@ -118,32 +222,55 @@ public class NavigatinThroughWebPages {
         assertEquals(URLpath + "Register.html", driver.getCurrentUrl());
 
         //fill email
-        driver.findElement(By.name("email")).sendKeys(UserEmail);
+        driver.findElement(By.name("email")).sendKeys(NewEmail);
         //fill pass
-        driver.findElement(By.name("password")).sendKeys(UserPass);
+        driver.findElement(By.name("password")).sendKeys(ValidPass + ValidPass);
         //fill pass1
-        driver.findElement(By.name("password1")).sendKeys(UserPass);
+        driver.findElement(By.name("password1")).sendKeys(ValidPass);
 
         //click Sign In
         driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
 
+        CatchAlert("Registration Failed!\n\nPasswords are not the same!");
+
+        //register page chk
+        assertEquals(URLpath + "Register.html", driver.getCurrentUrl());
+
+        // ------------- Register existing Email Test --------------------
+
+        //fill email
+        driver.findElement(By.name("email")).sendKeys(ValidEmail);
+        //fill pass
+        driver.findElement(By.name("password")).sendKeys(ValidPass);
+        //fill pass1
+        driver.findElement(By.name("password1")).sendKeys(ValidPass);
+
+        //click Sign In
+        driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
+
+        CatchAlert("Registration Failed!\n\nUsername already exists");
+
+        //Home page chk
+        assertEquals(URLpath + "Register.html", driver.getCurrentUrl());
+
+    }
+
+    //helper func
+    private void CatchAlert(String ErrorMsg)
+    {
         try{
             //Wait 10 seconds till alert is present
             WebDriverWait wait = new WebDriverWait(driver, 10);
             Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 
-            if (alert.getText().equals("Registration Succeed!")) {
+            if (alert.getText().equals(ErrorMsg)) {
                 //Accepting alert.
                 alert.accept();
             }
         }catch(Throwable e){
             System.err.println("Error came while waiting for the alert popup. "+e.getMessage());
         }
-
-        //Home page chk
-        assertEquals(URLpath + "HomePage.html", driver.getCurrentUrl());
     }
-    
 
     @After
     public void tearDown(){driver.close();}

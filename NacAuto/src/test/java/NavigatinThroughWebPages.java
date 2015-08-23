@@ -17,7 +17,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class NavigatinThroughWebPages {
     private WebDriver driver;
-    private String URLpath = "http://localhost:63342/TeamMedisalton/HTML/";     //"http://192.168.0.196/team/work/html/";
+    private String URLpath = "http://localhost:63342/TeamMedisalton/HTML/"; //"http://192.168.0.196/team/work/html/";
 
     String ValidEmail = "test@gmail.com";
     String ValidPass = "test";
@@ -26,6 +26,7 @@ public class NavigatinThroughWebPages {
     @Before
     public void setUp(){
         driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @Test
